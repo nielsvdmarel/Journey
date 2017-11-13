@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Gold
+  m_Shader: {fileID: 4800000, guid: 2bbd5a281125d4b47880c3cc72d0932b, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BlendTex:
+        m_Texture: {fileID: 2800000, guid: 3586d5e60ea96bf48912d4a51f6d6310, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BlendTex2:
+        m_Texture: {fileID: 2800000, guid: 3586d5e60ea96bf48912d4a51f6d6310, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: bab2132b94018194185ac1509051b2d7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainNrm:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: feb9be1556401c042bf2bc9b18f513f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex1:
+        m_Texture: {fileID: 2800000, guid: feb9be1556401c042bf2bc9b18f513f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 3586d5e60ea96bf48912d4a51f6d6310, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex3:
+        m_Texture: {fileID: 2800000, guid: feb9be1556401c042bf2bc9b18f513f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RustNrm:
+        m_Texture: {fileID: 2800000, guid: 3586d5e60ea96bf48912d4a51f6d6310, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RustTex:
+        m_Texture: {fileID: 2800000, guid: 3586d5e60ea96bf48912d4a51f6d6310, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ScratchesNrm:
+        m_Texture: {fileID: 2800000, guid: feb9be1556401c042bf2bc9b18f513f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ScratchesTex:
+        m_Texture: {fileID: 2800000, guid: e9a2b096d9cf0f04fa1d8c36ac44458d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2:
+        m_Texture: {fileID: 2800000, guid: 3586d5e60ea96bf48912d4a51f6d6310, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _t1:
+        m_Texture: {fileID: 2800000, guid: feb9be1556401c042bf2bc9b18f513f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _t2:
+        m_Texture: {fileID: 2800000, guid: 81971ec25a321604c8770f16cf2bd74e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _t3:
+        m_Texture: {fileID: 2800000, guid: e9a2b096d9cf0f04fa1d8c36ac44458d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _t4:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _t5:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Blend: 0
+    - _Blend1: 1
+    - _Blend2: 0
+    - _Glow: 1.89
+    - _GlowAmount: 0.91
+    - _RimPower: 3
+    - _RustAmount: 1
+    - _ScratchesAmount: 0
+    - _Strength: 5.84
+    - _ac: 0
+    - _acm: 0
+    - _rb: 1
+    - _rc: 1
+    - _rg: 1
+    - num: 3
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorTint: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowColor: {r: 1, g: 1, b: 0, a: 0}
+    - _LabelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _PatternColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimColor: {r: 0.77205884, g: 0.31790656, b: 0.31790656, a: 1}
+    - _tint1: {r: 1, g: 1, b: 1, a: 0}
+    - _tint2: {r: 1, g: 1, b: 1, a: 0}
+    - _tint3: {r: 1, g: 1, b: 1, a: 0}
+    - _tint5: {r: 1, g: 1, b: 1, a: 0}
