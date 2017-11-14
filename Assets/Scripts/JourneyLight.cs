@@ -7,6 +7,7 @@ public class JourneyLight : MonoBehaviour{
     public Material white;
     public float shininessWhite;
     public float shininessRed;
+    public float speed;
 
     void Start()
     {
@@ -23,7 +24,7 @@ public class JourneyLight : MonoBehaviour{
             if (shininessWhite < 3)
             {
                 {
-                    shininessWhite += 2 * Time.deltaTime;
+                    shininessWhite += speed * Time.deltaTime;
                 }
             }
         }
@@ -33,7 +34,7 @@ public class JourneyLight : MonoBehaviour{
             if (shininessRed < 3)
             {
                 {
-                    shininessRed += 2 * Time.deltaTime;
+                    shininessRed += speed * Time.deltaTime;
                 }
             }
         }
@@ -42,14 +43,14 @@ public class JourneyLight : MonoBehaviour{
         {
             if (shininessRed > 0.1)
             {
-                shininessRed -= 2 * Time.deltaTime;
+                shininessRed -= speed * Time.deltaTime;
             }
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
             if (shininessWhite > 0.1)
             {
-                shininessWhite -= 2 * Time.deltaTime;
+                shininessWhite -= speed * Time.deltaTime;
             }
         }
 

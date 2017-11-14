@@ -172,7 +172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &54998592
 Animator:
   serializedVersion: 3
@@ -6298,6 +6298,7 @@ MonoBehaviour:
   white: {fileID: 2100000, guid: 0f0d4224f3737c44189054dab6a25834, type: 2}
   shininessWhite: 0.1
   shininessRed: 0.1
+  speed: 8
 --- !u!4 &473716737 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4191443656544220, guid: 59c4748b2cf7b5746b40c0b82909202b,
@@ -12469,8 +12470,8 @@ Cloth:
   m_UseTethers: 1
   m_UseGravity: 1
   m_Damping: 0.3
-  m_ExternalAcceleration: {x: 0, y: 1, z: -4}
-  m_RandomAcceleration: {x: 3, y: 0, z: -2}
+  m_ExternalAcceleration: {x: 0, y: 1, z: 4}
+  m_RandomAcceleration: {x: 3, y: 0, z: 2}
   m_WorldVelocityScale: 0.28
   m_WorldAccelerationScale: 0.1
   m_Friction: 0.5
@@ -12696,8 +12697,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 785588294}
   m_AABB:
-    m_Center: {x: 0, y: -0.007922888, z: 0}
-    m_Extent: {x: 0.0015497856, y: 0.017922886, z: 0.009589148}
+    m_Center: {x: 0, y: -0.007922888, z: -0.0000000018626451}
+    m_Extent: {x: 0.0015497856, y: 0.017922884, z: 0.009589144}
   m_DirtyAABB: 0
 --- !u!1 &807291187
 GameObject:
@@ -12859,12 +12860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c452ecde19e2c9545b9642cc0cba52e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  rotationSpeed: 6
-  jumpHeight: 10
-  isGrounded: 0
-  x: 0
-  z: 0
 --- !u!1 &988252650
 GameObject:
   m_ObjectHideFlags: 0
@@ -19063,7 +19058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1263195571
 Light:
   m_ObjectHideFlags: 0
@@ -20444,7 +20439,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400046, guid: aa4a4a1a822787e4a82f4061d0ad6b53, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555428936}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.006, y: -10.58, z: 3.428}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
@@ -20455,7 +20450,7 @@ Transform:
   - {fileID: 785588294}
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1561361692
 GameObject:
   m_ObjectHideFlags: 0
@@ -21345,12 +21340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b5e8de77c5b4597ae7fbfb49a95e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logDebugInfo: 0
-  invertYAxis: 0
-  enableXInput: 0
-  useFixedUpdate: 0
-  dontDestroyOnLoad: 0
-  customProfiles: []
 --- !u!4 &1885615390
 Transform:
   m_ObjectHideFlags: 0
@@ -21438,7 +21427,7 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 0}
   m_AABB:
-    m_Center: {x: -0.000000059604645, y: -0.00014737621, z: 0.013073117}
+    m_Center: {x: -0.000000059604645, y: -0.00014738366, z: 0.013073117}
     m_Extent: {x: 0.008520349, y: 0.0075723873, z: 0.013517299}
   m_DirtyAABB: 0
 --- !u!183 &1887267773
