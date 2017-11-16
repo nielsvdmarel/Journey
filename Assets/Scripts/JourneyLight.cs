@@ -3,11 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class JourneyLight : MonoBehaviour{
-    public Material red;
-    public Material white;
-    public float shininessWhite;
-    public float shininessRed;
+    [Header("Light up material")]
+    public Material LightMaterial;
+    [Header("Level Texture maps")]
+    public Texture[] AllColor;
+    public Texture[] LightMaps;
+    [Header("Light Up speed & current player cloak level")]
     public float speed;
+    public float LightLevel;
+    [SerializeField]
+    private int CurrentLevel;
+    [Header("Input key for player cloak level")]
+    public KeyCode up;
+    public KeyCode down;
+    public KeyCode next;
+    public KeyCode previous;
+
 
     void Start()
     {
@@ -16,47 +27,56 @@ public class JourneyLight : MonoBehaviour{
 
     void Update()
     {
-        white.SetFloat("_Glow", shininessWhite);
-        red.SetFloat("_Glow", shininessRed);
+        LightMaterial.SetFloat("_Glow", LightLevel);
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKeyDown(previous))
         {
-            if (shininessWhite < 3)
+            CurrentLevel -= 1;
+            if (CurrentLevel < 0)
+            {
+               CurrentLevel = 3;
+            }
+            SetCurrentPlayerLevel();
+        }
+
+        if (Input.GetKeyDown(next))
+        {
+            CurrentLevel += 1;
+            if (CurrentLevel > 3)
+            {
+                CurrentLevel = 0;
+            }
+            SetCurrentPlayerLevel();
+        }
+
+
+
+        if (Input.GetKey(up))
+        {
+            if (LightLevel < 3)
             {
                 {
-                    shininessWhite += speed * Time.deltaTime;
+                    LightLevel += speed * Time.deltaTime;
                 }
             }
         }
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(down))
         {
-            if (shininessRed < 3)
+            if (LightLevel > 0.1)
             {
-                {
-                    shininessRed += speed * Time.deltaTime;
-                }
+                LightLevel -= speed * Time.deltaTime;
             }
         }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            if (shininessRed > 0.1)
-            {
-                shininessRed -= speed * Time.deltaTime;
-            }
-        }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            if (shininessWhite > 0.1)
-            {
-                shininessWhite -= speed * Time.deltaTime;
-            }
-        }
-
-
 
     }
+
+    void SetCurrentPlayerLevel()
+    {
+        LightMaterial.SetTexture("_ThirdTex", AllColor[CurrentLevel]);
+        LightMaterial.SetTexture("_SecondTex", LightMaps[CurrentLevel]);
+    }
+
 }
 
 
