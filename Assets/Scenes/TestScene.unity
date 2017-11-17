@@ -6371,6 +6371,17 @@ MonoBehaviour:
   down: 115
   next: 100
   previous: 97
+  IsAnim: 0
+  AnimTex:
+  - {fileID: 2800000, guid: e20818513a140bf48991a3bdd2993d17, type: 3}
+  - {fileID: 2800000, guid: 09b84b1af23e45649866204878d33ac3, type: 3}
+  - {fileID: 2800000, guid: d291a694c02d1ef4897f6b54584ff855, type: 3}
+  - {fileID: 2800000, guid: c9a0e757d6d8d924fa6e23749ddd0412, type: 3}
+  - {fileID: 2800000, guid: 74cbee889fdccb049af7e95ab54b5c0e, type: 3}
+  - {fileID: 2800000, guid: b4ddff97566e1b84686edb005127f95a, type: 3}
+  - {fileID: 2800000, guid: 1ca963c3a5decdb49b6bdf184d55827d, type: 3}
+  - {fileID: 2800000, guid: 3b02c7c940863e94985563fc2a30db54, type: 3}
+  AnimNum: 0
 --- !u!1 &480711623
 GameObject:
   m_ObjectHideFlags: 0
@@ -25216,6 +25227,9 @@ MonoBehaviour:
   down: 274
   next: 275
   previous: 276
+  IsAnim: 0
+  AnimTex: []
+  AnimNum: 0
 --- !u!1 &1561361692
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,14 @@ public class JourneyLight : MonoBehaviour{
     public KeyCode next;
     public KeyCode previous;
 
+    [Header("Animation on cloth")]
+    [SerializeField]
+    private bool IsAnim;
+    [SerializeField]
+    private Texture[] AnimTex;
+    [SerializeField]
+    private int AnimNum;
+
 
     void Start()
     {
@@ -34,7 +42,7 @@ public class JourneyLight : MonoBehaviour{
             CurrentLevel -= 1;
             if (CurrentLevel < 0)
             {
-               CurrentLevel = 3;
+                CurrentLevel = 3;
             }
             SetCurrentPlayerLevel();
         }
@@ -69,6 +77,20 @@ public class JourneyLight : MonoBehaviour{
             }
         }
 
+    }
+
+    private void FixedUpdate()
+    {
+        if (IsAnim)
+        {
+            AnimNum++;
+            if(AnimNum > 7)
+            {
+                AnimNum = 0;
+            }
+            LightMaterial.SetTexture("_ThirdTex", AnimTex[AnimNum]);
+            //LightMaterial.SetTexture("_SecondTex", LightMaps[CurrentLevel]);
+        }
     }
 
     void SetCurrentPlayerLevel()
