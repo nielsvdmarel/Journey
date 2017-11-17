@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45073014, g: 0.49884242, b: 0.56500727, a: 1}
+  m_IndirectSpecularColor: {r: 0.45072967, g: 0.49884206, b: 0.5650059, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -6371,7 +6371,7 @@ MonoBehaviour:
   down: 115
   next: 100
   previous: 97
-  IsAnim: 0
+  IsAnim: 1
   AnimTex:
   - {fileID: 2800000, guid: e20818513a140bf48991a3bdd2993d17, type: 3}
   - {fileID: 2800000, guid: 09b84b1af23e45649866204878d33ac3, type: 3}
@@ -6381,6 +6381,15 @@ MonoBehaviour:
   - {fileID: 2800000, guid: b4ddff97566e1b84686edb005127f95a, type: 3}
   - {fileID: 2800000, guid: 1ca963c3a5decdb49b6bdf184d55827d, type: 3}
   - {fileID: 2800000, guid: 3b02c7c940863e94985563fc2a30db54, type: 3}
+  AnimlightTex:
+  - {fileID: 2800000, guid: 727017d33e9d9df478a394cbe5ae0380, type: 3}
+  - {fileID: 2800000, guid: 0ed88e075cb4ee944a102a09df3c2c2b, type: 3}
+  - {fileID: 2800000, guid: 75db9e063e70385418006af6b34951bb, type: 3}
+  - {fileID: 2800000, guid: ee6dcc4cebdc4734aa40efcc3fc6e13a, type: 3}
+  - {fileID: 2800000, guid: bb2511fa822a15e4f988261bae5eeaad, type: 3}
+  - {fileID: 2800000, guid: e46917df6cb75b647b6d2d6185a0734a, type: 3}
+  - {fileID: 2800000, guid: f4f2d779eaf612746b36090fdbc393d5, type: 3}
+  - {fileID: 2800000, guid: 32ac1fcad7925a74f9b648b1a1393d16, type: 3}
   AnimNum: 0
 --- !u!1 &480711623
 GameObject:
@@ -25229,6 +25238,7 @@ MonoBehaviour:
   previous: 276
   IsAnim: 0
   AnimTex: []
+  AnimlightTex: []
   AnimNum: 0
 --- !u!1 &1561361692
 GameObject:

@@ -25,6 +25,8 @@ public class JourneyLight : MonoBehaviour{
     [SerializeField]
     private Texture[] AnimTex;
     [SerializeField]
+    private Texture[] AnimlightTex;
+    [SerializeField]
     private int AnimNum;
 
 
@@ -89,7 +91,7 @@ public class JourneyLight : MonoBehaviour{
                 AnimNum = 0;
             }
             LightMaterial.SetTexture("_ThirdTex", AnimTex[AnimNum]);
-            //LightMaterial.SetTexture("_SecondTex", LightMaps[CurrentLevel]);
+            LightMaterial.SetTexture("_SecondTex", AnimlightTex[AnimNum]);
         }
     }
 
