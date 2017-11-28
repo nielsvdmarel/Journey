@@ -16,7 +16,8 @@
 	{
 		Tags{ "Queue" = "Geometry-9" "IgnoreProjector" = "True" "RenderType" = "Transparent" }
 		Lighting Off
-		LOD 100
+		Cull Off
+		LOD 200
 		Blend SrcAlpha OneMinusSrcAlpha
 
 		CGPROGRAM
