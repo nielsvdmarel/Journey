@@ -3,40 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
-    public float playerSpeed;
-    public float JumpHeight;
-
-    void Start ()
+    public float speed = 6.0F;
+    public float jumpSpeed = 8.0F;
+    public float gravity = 20.0F;
+    [SerializeField]
+    private Vector3 moveDirection = Vector3.zero;
+    [SerializeField]
+    private CharacterController controller;
+    private void Start()
     {
-		
-	}
-	
-	
-	void Update ()
+       controller = GetComponent<CharacterController>();
+    }
+    void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (controller.isGrounded)
         {
-            transform.position -= transform.forward * Time.deltaTime * playerSpeed;
-        }
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            moveDirection = -transform.TransformDirection(moveDirection);
+            moveDirection *= speed;
+            if (Input.GetButton("Jump"))
+                moveDirection.y = jumpSpeed;
 
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position += transform.right * Time.deltaTime * playerSpeed;
         }
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position -= transform.right * Time.deltaTime * playerSpeed;
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position += transform.forward * Time.deltaTime * playerSpeed;
-        }
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            transform.position += transform.up * Time.deltaTime * JumpHeight;
-        }
+        moveDirection.y -= gravity * Time.deltaTime;
+        controller.Move(moveDirection * Time.deltaTime);
     }
 }

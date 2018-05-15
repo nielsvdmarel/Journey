@@ -11,6 +11,7 @@ public class PlayerCamFolower : MonoBehaviour {
 	
 	void Update ()
     {
-        //transform.position = Vector3.SmoothDamp(transform.position, target.position,ref velocity, smoothTime);
+        transform.position = Vector3.SmoothDamp(transform.position, target.position,ref velocity, smoothTime);
+        // lol transform.eulerAngles = Vector3.SmoothDamp(transform.rotation.eulerAngles, target.rotation.eulerAngles, ref velocity, smoothTime);
 	}
 }
